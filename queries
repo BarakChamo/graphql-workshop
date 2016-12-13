@@ -1,0 +1,61 @@
+# Single User query
+
+# query {
+#   user(id: "1"){
+#     name
+#   }
+# }
+
+
+# User and friends query
+
+# query {
+#   user(id: "1"){
+#     name
+#     friends {
+#       name
+#     }
+#   }
+# }
+
+
+# User, friends and events query
+
+# query {
+#   user(id: "1"){
+#     name
+#     friends {
+#       name
+#     }
+#     events {
+#       title
+#     }
+#   }
+# }
+
+
+# Full query
+
+# query {
+#  user(id: "1"){
+#   name
+
+#   friends {
+#     name
+#     events {
+#       title
+#       creator {
+#         name
+#       }
+#     }
+#   }
+
+#   events {
+#   	title
+#     time
+#     creator {
+#       name
+#     }
+#   }
+# }
+# }
